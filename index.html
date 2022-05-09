@@ -14,10 +14,23 @@
 </head>
 <body>
     <div id="root">
-        
+        <div class="container">
+            <!-- header -->
+            <!-- /header -->
+
+            <!-- main -->
+            <main>
+
+                <ul v-for="item in todo" class="to-do-actions">
+                    <li class="to-dos">
+                        {{ item.text }}
+                    </li>
+                </ul>
+
+            </main>
+            <!-- /main -->
+        </div>
     </div>
-
-
     <!-- script -->
     <script src="js/script.js"></script>
     
