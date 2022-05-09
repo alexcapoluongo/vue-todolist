@@ -65,3 +65,5 @@ const app = new Vue (
         }
     }
 )
+
+//bug to solve: the underline goes to the same index number if you delete a task

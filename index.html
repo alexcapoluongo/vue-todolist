@@ -25,10 +25,17 @@
             <!-- main -->
             <main>
 
-                <ul v-for="(item,index) in todo" class="to-do-actions">
-                    <li @click="doneTask(index)" class="to-dos" :class="item.done ? 'done' : '' " >
-                        {{ item.text }}
-                        <div @click="removeToDo(index)" class="remove-item">
+                <ul v-for="(item,index) in todo" 
+                class="to-do-actions">
+                    <li
+                    class="to-dos" 
+                    :class="item.done ? 'done' : '' " >
+                        <span @click="doneTask(index)">
+                            {{ item.text }}
+                        </span>
+                        
+                        <div @click="removeToDo(index)" 
+                        class="remove-item">
                             <i class="fas fa-times"></i> 
                         </div>
                     </li>

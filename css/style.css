@@ -29,6 +29,12 @@ main ul li {
     border-bottom: 1px solid black;
     background-color: lightgray;
     padding: 1em;
+    display: flex;
+}
+
+main ul li span {
+    display: flex;
+    flex-grow: 1;
 }
 
 .remove-item {
