@@ -34,3 +34,7 @@ main ul li {
 .remove-item {
     float: right;
 }
+
+.item-done {
+    text-decoration: line-through;
+}
