@@ -17,7 +17,7 @@
         <div class="container">
             <!-- header -->
 
-            <input class="add-task" type="text" placeholder="Add a task to do" v-model= "newTask">
+            <input class="add-task" type="text" placeholder="Add a task to do" v-model= "newTask" @keyup.enter="addTask">
             <button @click="addTask">Add</button>
 
             <!-- /header -->
