@@ -53,8 +53,10 @@ const app = new Vue (
 
             addTask: function() {
                 //pusho un nuovo obj in array
+                if (this.newTask.trim().length > 0) {
                 this.todo.push({text: this.newTask, done: false});
                 this.newTask = "";
+                }
             },
 
             //funzione che sottolinea solo le done cliccate
@@ -66,4 +68,3 @@ const app = new Vue (
     }
 )
 
-//bug to solve: the underline goes to the same index number if you delete a task
