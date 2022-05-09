@@ -21,10 +21,14 @@
             <!-- main -->
             <main>
 
-                <ul v-for="item in todo" class="to-do-actions">
+                <ul v-for="(item,index) in todo" class="to-do-actions">
                     <li class="to-dos">
                         {{ item.text }}
+                        <div @click="removeToDo(index)" class="remove-item">
+                            <i class="fas fa-times"></i> 
+                        </div>
                     </li>
+
                 </ul>
 
             </main>
