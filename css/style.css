@@ -35,6 +35,6 @@ main ul li {
     float: right;
 }
 
-.item-done {
+.done {
     text-decoration: line-through;
 }

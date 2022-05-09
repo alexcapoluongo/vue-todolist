@@ -55,6 +55,12 @@ const app = new Vue (
                 //pusho un nuovo obj in array
                 this.todo.push({text: this.newTask, done: false});
                 this.newTask = "";
+            },
+
+            //funzione che sottolinea solo le done cliccate
+            doneTask: function(index){
+                const underlinedDone = this.todo[index];
+                underlinedDone.done = !underlinedDone.done
             }
         }
     }
