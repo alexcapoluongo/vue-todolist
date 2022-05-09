@@ -9,6 +9,14 @@
     margin: 0 auto;
 }
 
+/* header */
+
+.add-task {
+    margin-top: 3em;
+}
+
+/* main */
+
 main {
     margin-top: 5em;
 }

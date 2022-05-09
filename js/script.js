@@ -37,13 +37,21 @@ const app = new Vue (
                     done: false
                 }
 
-            ]
+            ],
+
+            newTask: "",
         },
 
         methods: {
             
             removeToDo: function(index) {
                 this.todo.splice(index, 1);
+            },
+
+            addTask: function() {
+                //pusho un nuovo obj in array
+                this.todo.push({text: this.newTask, done: false});
+                this.newTask = "";
             }
         }
     }
